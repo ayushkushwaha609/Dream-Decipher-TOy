@@ -1,0 +1,86 @@
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's dimensions */
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #512B81, #8696FE, #C4B0FF);
+    color: #4942E4;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #35155D;
+    font-weight: bold;
+    margin: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+   
+    color: #514da3;
+    padding: 0 20px;
+}
+body{
+    background: linear-gradient(to right, #512B81, #8696FE, #C4B0FF);
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+  /* Define the gradient text color */
+  .link a {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #371067, #3d50ca, #6e4cd4);
+    text-decoration: none; /* Remove underline from the link */
+  }
+
